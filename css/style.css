@@ -1,0 +1,115 @@
+@import url<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">;
+@import url<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">;
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: "Gotu", sans-serif;
+  color: ##000000;
+  line-height: 1.5;
+	background-color: #F3D9F7;
+  color: black;
+}
+
+header, footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: black;
+  background-color:#C120AE;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, ul, {
+	text-align: center;
+}
+img {
+  height: 250px;
+	text-align: center;
+}
+
+section img {
+  height: 200px;
+}
+	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+	text-align: center;
+}
+table style {
+	text-align: center;
+}
+
+header, footer {
+  padding: 1em;
+  background-color: #C120AE; 
+}
+
+main {
+  border: 1px solid #C120AE;
+  padding: 1em;
+  background-color: #F3D9F7;
+
+nav {
+  border: 1px solid #C120AE;
+  padding: 1em;
+  background-color: #F3D9F7;
+}
+
+
+header ul li{
+  display: inline;
+  padding: 8px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link {
+    color: white;
+}
+a:visited {
+    color: orange;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+
+<div id="layout">
+	<div id="one">One</div>
+	<div id="two">Two</div>
+	<div id="three">Three</div>
+	<div id="four">Four</div>
+	<div id="five">Five</div>
+	</div>
+	#one {grid-area: header; }
+		#two {grid-area: ads; }
+		#three {grid-area: main; }
+		#four {grid-area: links; }
+		#five {grid-area: footer; }
+	
+wrapper {
+  display: grid;
+  grid-gap: 0px;
+	grid-template-rows: 100px 400px 100px;
+	grid-template-columns: 200px 1fr; 
+		grid-template-areas: "header header header"
+								"ads main links"
+								"footer footer footer";
+  background-color: #F3D9F7;
+  max-width: 960px;
+}
+
+wrapper > * {
+  grid-column: col-start / span 12;
+}
